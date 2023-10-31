@@ -33,12 +33,24 @@ createApp({
                     text: 'Fare il bucato',
                     done: false
                 }
-            ]
+            ],
+            newIds: 3,
+            newText: ''
         }
     },
     methods: {
         tasksRemove(index){
             this.tasks.splice(index,1)
+        },
+        addNewTask(){
+            this.newIds++;
+            const newTask = {
+                id: this.newIds,
+                text: this.newText,
+                done: false
+            }
+            this.tasks.push(newTask);
+            this.newText = '';
         }
     },
 }).mount('#app');
