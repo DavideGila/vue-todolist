@@ -25,7 +25,7 @@
         <header class="text-center">
           <img src="" alt="Logo" />
           <div class="my-3">
-            <input type="text" class="form-control w-50 d-inline-block mx-3" v-model="newText"/>
+            <input type="text" class="form-control w-50 d-inline-block mx-3" v-model="newText" @keyup.enter="addNewTask()"/>
             <button class="btn btn-primary align-middle" @click="addNewTask()">Add Task</button>
           </div>
         </header>
