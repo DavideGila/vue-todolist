@@ -51,6 +51,9 @@ createApp({
             }
             this.tasks.push(newTask);
             this.newText = '';
+        },
+        revertDone(index){
+            this.tasks[index].done = !this.tasks[index].done
         }
     },
 }).mount('#app');
