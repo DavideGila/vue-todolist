@@ -54,6 +54,12 @@ createApp({
         },
         revertDone(index){
             this.tasks[index].done = !this.tasks[index].done
+        },
+        playSound (sound) {
+            if(sound) {
+              var audio = new Audio(sound);
+              audio.play();
+            }
         }
     },
 }).mount('#app');
