@@ -20,17 +20,17 @@ createApp({
             tasks: [
                 {
                     id: 1,
-                    text: 'Fare i compiti',
+                    text: 'Mission 1',
                     done: false
                 },
                 {
                     id: 2,
-                    text: 'Fare la spesa',
+                    text: 'Mission 2',
                     done: true
                 },
                 {
                     id: 3,
-                    text: 'Fare il bucato',
+                    text: 'Mission 3',
                     done: false
                 }
             ],
