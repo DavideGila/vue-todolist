@@ -31,7 +31,7 @@
         </header>
         <main>
           <ul class="list-group">
-            <li class="list-group-item list-group-item-action d-flex justify-content-between" v-for="(todos, index) in tasks" :key="todos.id" :class="{'done':todos.done}">
+            <li class="list-group-item list-group-item-action d-flex justify-content-between" v-for="(todos, index) in tasks" :key="todos.id" :class="{'done':todos.done}" @click="revertDone(index)">
               <span>{{todos.text}}</span>
               <i class="fa-solid fa-trash" style="cursor: pointer" @click="tasksRemove(index)"></i>
             </li>
